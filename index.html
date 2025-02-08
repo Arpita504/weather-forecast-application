@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <main>
+            <section class="current-weather">
+                <div class="search-box">
+                    <input type="text" id="cityInput" placeholder="Bengaluru" list="cityList">
+                    <datalist id="cityList"></datalist>
+                    <select id="unitSelect">
+                        <option value="metric">°C</option>
+                        <option value="imperial">°F</option>
+                    </select>
+                    <button id="searchBtn"><i class="material-icons">search</i></button>
+                </div>
+                <div class="weather-icon">
+                    <img id="weatherIcon" src="http://openweathermap.org/img/wn/02d@2x.png" alt="Weather Icon">
+                </div>
+                <div class="temperature">
+                    <h1 id="temperature">34°C</h1>
+                </div>
+                <p id="feelsLike">Feels like 30°C</p>
+                <p id="weatherDescription">Few clouds</p>
+                <p id="dateTime">Wednesday, April 3 at 1:15 PM</p>
+                <p id="location">Bengaluru, IN</p>
+            </section>
+            <section class="today-highlights">
+                <h2>Today's Highlights</h2>
+                <div class="highlights-grid">
+                    <div class="highlight-card">
+                        <h3>Humidity</h3>
+                        <i class="material-icons">water_drop</i>
+                        <p id="humidity">38%</p>
+                    </div>
+                    <div class="highlight-card">
+                        <h3>Wind Speed</h3>
+                        <i class="material-icons">air</i>
+                        <p id="windSpeed">3 km/h</p>
+                    </div>
+                    <div class="highlight-card">
+                        <h3>Sunrise & Sunset</h3>
+                        <i class="material-icons">wb_sunny</i>
+                        <p id="sunrise">6:14 AM</p>
+                        <p id="sunset">6:31 PM</p>
+                    </div>
+                    <div class="highlight-card">
+                        <h3>Visibility</h3>
+                        <i class="material-icons">wb_sunny</i>
+                        <p id="visibility">10000</p>
+                    </div>
+                    <div class="highlight-card">
+                        <h3>Clouds</h3>
+                        <i class="material-icons">cloud</i>
+                        <p id="clouds">20%</p>
+                    </div>
+                    <div class="highlight-card">
+                        <h3>Pressure</h3>
+                        <i class="material-icons">speed</i>
+                        <p id="pressure">1015 hPa</p>
+                    </div>
+                </div>
+            </section>
+            <section class="weekly-forecast">
+                <h2>This Week</h2>
+                <div id="forecastGrid" class="forecast-grid">
+                    <!-- Forecast items will be dynamically added here -->
+                </div>
+            </section>
+        </main>
+        <section class="search-city section-message">
+            <img src="search.png" alt="Search City">
+            <div>
+                <h1>Search City</h1>
+                <h4 class="regular-txt">
+                    Find Out the Weather Condition of the city
+                </h4>
+            </div>
+        </section>
+        <section class="not-found section-message" style="display: none;">
+            <img src="404.jpg" alt="City Not Found">
+            <div>
+                <h1>City Not Found</h1>
+                <h4 class="regular-txt">
+                    Please enter a valid city name
+                </h4>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
