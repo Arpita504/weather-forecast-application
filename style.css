@@ -11,15 +11,17 @@ html, body {
 
 
 body {
-  /*  background: url("./images/w2.jpg");*/
+    background: url("w2.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-     background: linear-gradient(135deg, #c56ea8,#00feba, #c56ea8, #00feba);
-  
     font-family: "Poppins", sans-serif;
     color: #000000;
 }
+
+  /*   background: linear-gradient(135deg, #c56ea8,#00feba, #c56ea8, #00feba);*/
+  
+  
 
 
 .container {
